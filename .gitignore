@@ -1,0 +1,8 @@
+.DS_Store
+.bundle
+database.yml
+db/*.sqlite3
+log/*.log
+tmp/
+omniauth.rb
+secret_token.rb
