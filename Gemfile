@@ -12,6 +12,7 @@ gem 'bcrypt-ruby', :require => 'bcrypt'
 gem 'haml'
 gem 'sass'
 gem 'omniauth'
+gem 'annotate-models'
 
 gem 'ruby-debug19', :require => 'ruby-debug'
 
