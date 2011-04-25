@@ -10,6 +10,7 @@ gem 'capistrano'
 
 gem 'bcrypt-ruby', :require => 'bcrypt'
 gem 'haml'
+gem 'sass'
 gem 'omniauth'
 
 gem 'ruby-debug19', :require => 'ruby-debug'
