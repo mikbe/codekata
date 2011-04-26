@@ -9,7 +9,7 @@ gem 'unicorn'
 gem 'capistrano'
 
 gem 'bcrypt-ruby', :require => 'bcrypt'
-gem 'haml'
+gem 'haml-rails', :require => 'haml'
 gem 'sass'
 gem 'omniauth'
 

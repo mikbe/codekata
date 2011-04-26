@@ -64,6 +64,11 @@ GEM
     ffi (1.0.7)
       rake (>= 0.8.7)
     haml (3.1.0)
+    haml-rails (0.3.4)
+      actionpack (~> 3.0)
+      activesupport (~> 3.0)
+      haml (~> 3.0)
+      railties (~> 3.0)
     highline (1.6.1)
     i18n (0.5.0)
     json_pure (1.5.1)
@@ -206,7 +211,7 @@ DEPENDENCIES
   bcrypt-ruby
   capistrano
   capybara
-  haml
+  haml-rails
   mocha
   nifty-generators
   omniauth

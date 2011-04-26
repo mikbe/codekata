@@ -14,7 +14,7 @@ class User < ActiveRecord::Base
   attr_accessible :name, :email
   
   validates :name,  :presence   => true,
-                    :length     => {:maximum => 20, :minimum => 6}
+                    :length     => {:maximum => 20, :minimum => 5}
   
   validates :email, :presence   => true,
                     :length     => {:maximum => 254, :minimum => 6},

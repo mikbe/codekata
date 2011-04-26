@@ -1,4 +1,12 @@
 Codekata::Application.routes.draw do
+
+  get "users/show"
+  get "users/new"
+  get "users/edit"
+  resources :users
+  
+  root :to => "users#show" 
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

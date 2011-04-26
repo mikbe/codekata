@@ -38,5 +38,12 @@ module Codekata
 
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters += [:password]
+    
+    # Custom config
+    config.generators do |g|
+      g.template_engine :haml
+      g.test_framework  :rspec, :fixture => false, :views => false
+    end
+    
   end
 end

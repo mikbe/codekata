@@ -16,9 +16,7 @@ Spork.prefork do
 
   RSpec.configure do |config|
     config.mock_with :rspec
-
     config.fixture_path = "#{::Rails.root}/spec/fixtures"
-
     config.use_transactional_fixtures = true
   end
 
@@ -44,7 +42,7 @@ end
 
 Spork.each_run do
   # This code will be run each time you run your specs.
-
+  load "#{Rails.root}/config/routes.rb"
 end
 
 # --- Instructions ---
