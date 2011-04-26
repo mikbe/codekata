@@ -13,4 +13,12 @@
 class User < ActiveRecord::Base
   attr_accessible :name, :email
   
+  validates :name,  :presence   => true,
+                    :length     => {:maximum => 20, :minimum => 6}
+  
+  validates :email, :presence   => true,
+                    :length     => {:maximum => 254, :minimum => 6},
+                    :uniqueness => {:case_sensitive => false},
+                    :format     => {:with => /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i }
+  
 end

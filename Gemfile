@@ -12,11 +12,11 @@ gem 'bcrypt-ruby', :require => 'bcrypt'
 gem 'haml'
 gem 'sass'
 gem 'omniauth'
-gem 'annotate-models'
-
-gem 'ruby-debug19', :require => 'ruby-debug'
 
 group :development, :test do
+  gem 'annotate-models'
+  gem 'ruby-debug19', :require => 'ruby-debug'
+  gem 'spork', '~> 0.9.0.rc5'  
   gem 'capybara'
   gem 'rspec-rails'
   gem 'sqlite3'
